@@ -1,14 +1,45 @@
 package refined
 
 type PosInt = Refined[int, Positive]
+type PosInt8 = Refined[int8, Positive]
+type PosInt16 = Refined[int16, Positive]
+type PosInt32 = Refined[int32, Positive]
+type PosInt64 = Refined[int64, Positive]
+type PosUInt = Refined[uint, Positive]
+type PosUInt8 = Refined[uint8, Positive]
+type PosUInt16 = Refined[uint16, Positive]
+type PosUInt32 = Refined[uint32, Positive]
+type PosUInt64 = Refined[uint64, Positive]
+
 type NonNegInt = Refined[int, NonNegative]
+type NonNegInt8 = Refined[int8, NonNegative]
+type NonNegInt16 = Refined[int16, NonNegative]
+type NonNegInt32 = Refined[int32, NonNegative]
+type NonNegInt64 = Refined[int64, NonNegative]
+
 type NegInt = Refined[int, Negative]
+type NegInt8 = Refined[int8, Negative]
+type NegInt16 = Refined[int16, Negative]
+type NegInt32 = Refined[int32, Negative]
+type NegInt64 = Refined[int64, Negative]
+
 type NonPosInt = Refined[int, NonPositive]
+type NonPosInt8 = Refined[int8, NonPositive]
+type NonPosInt16 = Refined[int16, NonPositive]
+type NonPosInt32 = Refined[int32, NonPositive]
+type NonPosInt64 = Refined[int64, NonPositive]
 
 type PosFloat32 = Refined[float32, Positive]
+type PosFloat64 = Refined[float64, Positive]
+
 type NonNegFloat32 = Refined[float32, NonNegative]
+type NonNegFloat64 = Refined[float64, NonNegative]
+
 type NegFloat32 = Refined[float32, Negative]
+type NegFloat64 = Refined[float64, Negative]
+
 type NonPosFloat32 = Refined[float32, NonPositive]
+type NonPosFloat64 = Refined[float64, NonPositive]
 
 type Positive struct{}                                            // x >0
 type Negative struct{}                                            // x <0
